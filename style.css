@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(pexels-matej-117839-1074882.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 7%;
+  padding-right: 10%;
+  animation-name: containerAnim;
+}
+
+.logo {
+  color: white;
+}
+
+.indexText {
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  color: #ea1538;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  color: #ea1538;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  background-color: #ea1538;
+  padding: 12px 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.transition-container {
+  color: white;
+  height: 40%;
+  width: 40%;
+  position: fixed;
+  left: 5%;
+  top: 32.5%;
+  opacity: 1;
+  transition: 1s;
+}
+
+html.is-animating .transition-container {
+  opacity: 0;
+}
+
+h3 {
+  font-size: 55px;
+  text-align: center;
+}
+
+.con {
+  color: white;
+  opacity: 0.8;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.7;
+}
